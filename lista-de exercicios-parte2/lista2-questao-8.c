@@ -12,7 +12,7 @@ printf("Informe o numero:\n", i);
 scanf ("%lf",&N);
 soma = soma + N;
 }
-printf ("\n N + N + N\n");
+
 printf(" A soma total e: %.4lf\n", soma );
 printf("\n---------Fim do Programa!----------\n");
 
