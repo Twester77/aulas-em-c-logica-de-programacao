@@ -1,22 +1,41 @@
 #include <stdio.h>
+#include <locale.h>
+#include <windows.h>
+
 int main()
-{
-    int  nome [30], I1, I2, I3, I4, I5;
- 
+{ 
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
 
-printf (" Por favor informe o nome da pessoa (até 30 caracteres):\n");
-scanf ("%s", &nome);
-printf ("\nQual a idade dessa pessoa?\n");
-scanf ("%d", I1 );
+    int   i, MV=0, MN=999, idade, posN=0, posV=0; 
+    char nome [30];
 
 
-for ( i = 1; i <= t2; i++) {
-    resul = t1 * i ;
-    printf(" A tabuada do %d e: %d * %d = %d\n", t1, t1, i, resul);
- 
-}
 
-printf ("\n--------Fim do programa!---------\n");
+
+for ( i = 1 ; i <=5 ; i++ ) {
+
+    printf (" Por favor informe o nome da pessoa (até 30 caracteres):\n");
+    scanf ("%s", nome );
+    printf ("Por favor informe a idade dessa pessoa:\n");
+    scanf("%d", &idade);
+
+
+
+if (idade > MV) {
+    MV = idade ; 
+    posV = i; }   
+
+if (idade < MN) {
+    MN = idade;
+    posN = i; }
+} 
+
+printf ("\n---------Resultado Final:---------\n");
+
+ printf("\n A pessoa mais velha é a %dª pessoa com %d anos\n", posV, MV); 
+ printf("\n A pessoa mais nova é a %dª pessoa com %d anos\n", posN, MN);
+ printf("\n---------Fim do programa!----------\n");
 
 return 0;
 
