@@ -1,0 +1,18 @@
+#include <stdio>
+
+main () {
+
+int  i=0, n , resul;
+
+printf ("Informe um numero par: /n");
+scanf("%d , &n");
+
+if (n % 2 !=0 ) {
+    printf ("Esocolha um outro número!");
+
+} 
+
+for ( i = 0, i < 100, i++)
+result = i + i
+}
+return 0;
