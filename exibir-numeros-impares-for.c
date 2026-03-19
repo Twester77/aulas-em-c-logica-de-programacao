@@ -20,3 +20,6 @@ printf (" a lista de numeros impares e: %d\n ");
 return 0;
 }
 
+
+
+
