@@ -4,7 +4,7 @@ int main() {
 
     int i, t1, t2, resul;  
 
-printf ("----------Bem vindo a tabbuada interativa!----------\n");
+printf ("----------Bem vindo a tabuada interativa!----------\n");
 printf (" Por favor informe o número da sua tabuada:\n");
 scanf ("%d", &t1);
 printf ("\nEm quantas vezes ele sera multiplicado?\n");
