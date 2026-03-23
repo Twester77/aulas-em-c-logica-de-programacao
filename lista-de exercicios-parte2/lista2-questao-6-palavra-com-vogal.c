@@ -1,30 +1,34 @@
 #include <stdio.h>
-#include <locale.h>
+#include <windows.h>
 
 int main()
 { 
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
+
 
     char vogal;
     
     printf("Escolha uma vogal (a, e, i, o, u):\n" );
     scanf(" %c", &vogal);
+     fflush(stdout);
 
     
     switch (vogal)
     {
     case ('a'):
     case ('A'):
-    printf ( " assintota ");
+    printf ( " assíntota ");
     break;
     
     case ( 'e'):
     case ( 'E'):
-    printf ( "equacao ");
+    printf ( "equação ");
     break;
 
     case ( 'i'):
     case ( 'I'):
-    printf (" incognita ");
+    printf (" incógnita ");
     break;
 
     case ( 'o'):
@@ -34,11 +38,12 @@ int main()
 
     case ( 'u'):
     case ( 'U'):
-    printf ( " uniao ");
+    printf ( " união ");
     break;
 
     default:
-    printf("Opcao invalida!");
+    printf("Opção inválida!");
+     fflush(stdout);
     break;
 
     }
