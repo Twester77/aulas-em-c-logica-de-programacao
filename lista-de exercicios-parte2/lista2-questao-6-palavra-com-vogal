@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{ 
+
+    char vogal;
+    
+    printf("Escolha uma vogal (a, e, i, o, u):\n" );
+    scanf(" %c", &vogal);
+
+    
+    switch (vogal)
+    {
+    case ('a'):
+    case ('A'):
+    printf ( " assintota ");
+    break;
+    
+    case ( 'e'):
+    case ( 'E'):
+    printf ( "equacao ");
+    break;
+
+    case ( 'i'):
+    case ( 'I'):
+    printf (" incognita ");
+    break;
+
+    case ( 'o'):
+    case ( 'O'):
+    printf (" obtuso ");
+    break;
+
+    case ( 'u'):
+    case ( 'U'):
+    printf ( " uniao ");
+    break;
+
+    default:
+    printf("Opcao invalida!");
+    break;
+
+    }
+return 0;
+}
+
